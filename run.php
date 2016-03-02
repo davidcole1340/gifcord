@@ -67,7 +67,7 @@ $ws->on('ready', function ($d) use ($ws, $addMessage) {
 
 	$ws->on(\Discord\WebSockets\Event::MESSAGE_CREATE, function ($message) use ($addMessage) {
 		$parts = explode("\n", $message->content);
-		$addMessage("{$message->full_channel->guild->name} > {$message->full_channel->name} > {$message->author->username} > {$parts[0]}");
+		$addMessage("{$message->full_channel->guild->name} > #{$message->full_channel->name} > {$message->author->username} > {$parts[0]}");
 		unset($parts[0]);
 
 		foreach ($parts as $part) {
