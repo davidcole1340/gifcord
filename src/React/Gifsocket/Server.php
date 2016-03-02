@@ -2,7 +2,6 @@
 
 namespace React\Gifsocket;
 
-use React\Curry\Util as Curry;
 use React\EventLoop\LoopInterface;
 
 class Server
@@ -25,7 +24,9 @@ class Server
             $gif->addFrame($frame);
             $gif->lastFrame = $frame;
 
-            $this->loop->addTimer(0.001, Curry::bind([$this, 'resendFrame'], $gif, $frame));
+            $this->loop->addTimer(0.001, function () use ($gif, $frame) {
+                $this->resendFrame($gif, $frame);
+            });
         }
     }
 
