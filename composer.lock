@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e8abfa7acf14cd0da625ffdae53e74d8",
-    "content-hash": "ce929783da2b10b5d245ca0698bfc01a",
+    "hash": "9794c509840454cf73aeb8e62928a383",
+    "content-hash": "5f624b3c9d1570b8b3247121a29c4503",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -855,6 +855,48 @@
             "time": "2014-02-26 17:36:58"
         },
         {
+            "name": "react/http",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/http.git",
+                "reference": "545723837ceed39cbd81e479ab98198bb2c5893b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/http/zipball/545723837ceed39cbd81e479ab98198bb2c5893b",
+                "reference": "545723837ceed39cbd81e479ab98198bb2c5893b",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^2.0",
+                "guzzlehttp/psr7": "^1.0",
+                "php": ">=5.4.0",
+                "react/socket": "^0.4",
+                "react/stream": "^0.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "React\\Http\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Library for building an evented http server.",
+            "keywords": [
+                "http"
+            ],
+            "time": "2015-12-28 14:55:30"
+        },
+        {
             "name": "react/promise",
             "version": "v2.2.2",
             "source": {
@@ -1391,7 +1433,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "team-reflex/discord-php": 20
+        "team-reflex/discord-php": 20,
+        "react/http": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

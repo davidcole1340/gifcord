@@ -14,7 +14,7 @@ Through [composer](http://getcomposer.org).
 
 First, start the example server:
 
-    $ php run.php
+    $ php run.php <email> <password> [port]
 
 Next, open up a browser and point it to `localhost:8080`. Now you can start
 typing stuff into your Discord channel. Each line captured by DiscordPHP will be

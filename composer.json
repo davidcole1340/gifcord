@@ -6,7 +6,8 @@
     "require": {
         "php": ">=5.4.0",
         "ext-gd": "*",
-        "team-reflex/discord-php": "dev-develop"
+        "team-reflex/discord-php": "dev-develop",
+        "react/http": "dev-master"
     },
     "autoload": {
         "psr-0": { "React\\Gifsocket": "src" }
